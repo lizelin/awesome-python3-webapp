@@ -169,4 +169,9 @@ def add_routes(app, module_name):
             path = getattr(fn, '__route__', None)
             if method and path:
                 add_route(app, fn)
-                        
+
+# for test
+if __name__ == "__main__":
+    path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'static')
+    print(path)
+    
