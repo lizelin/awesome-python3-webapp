@@ -2,9 +2,13 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "./www"
 		}
 	],
 	"settings": {
-		"python.pythonPath": "/opt/anaconda3/bin/python"
+		"python.pythonPath": "/opt/anaconda3/bin/python",
+		"python.jediEnabled": false
 	}
 }
