@@ -20,4 +20,16 @@ async def index(request):
         '__template__': 'blogs.html',
         'blogs': blogs
     }
+
+@get('/api/users')
+async def api_get_users(*, page='1'):
+    num = await User.findNumber('count(id)')
+    print(" user  count is : %d" %num)
+    if num ==0:
+        return dict(page=1, users=())
+    users = await User.findAll(orderBy='created_at desc', limit=(0, 10))
+    for u in users:
+        u.passwd = '******'
+    return dict(page=1, users=users)
+
    
