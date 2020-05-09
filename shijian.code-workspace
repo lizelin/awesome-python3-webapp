@@ -5,8 +5,14 @@
 		}
 	],
 	"settings": {
-		"python.pythonPath": "/opt/anaconda3/bin/python",
+		/*"python.pythonPath": "/opt/anaconda3/bin/python",*/
+		"python.pythonPath": "C:\\Apps\\anaconda3\\python.exe",
 		"python.jediEnabled": false,
 		"files.autoSave": "onFocusChange"
+	},
+	"launch": {
+		"configurations": [
+		
+		]
 	}
 }

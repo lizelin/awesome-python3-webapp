@@ -77,6 +77,7 @@ async def data_factory(app, handler):
         return (await handler(request))
     return parse_data
 
+
 async def response_factory(app, handler):
     async def response(request):
         logging.info('Response handler...')
@@ -110,7 +111,7 @@ async def response_factory(app, handler):
             t, m = r
             if isinstance(t, int) and t >= 100 and t < 600:
                 return web.Response(t, str(m))
-        # default:
+        # default: test
         resp = web.Response(body=str(r).encode('utf-8'))
         resp.content_type = 'text/plain;charset=utf-8'
         return resp
@@ -144,4 +145,3 @@ async def init(loop):
 loop = asyncio.get_event_loop()
 loop.run_until_complete(init(loop))
 loop.run_forever()
-
