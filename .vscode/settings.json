@@ -1,7 +1,3 @@
 {
-    "python.pythonPath": "C:\\Apps\\anaconda3\\python.exe",
-    "python.autoComplete.extraPaths": [
-    
-    ],
     "python.jediEnabled": false
 }
