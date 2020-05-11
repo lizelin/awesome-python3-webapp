@@ -27,7 +27,7 @@ def build():
 _REMOTE_TMP_TAR = '/home/zlli/tmp/%s' %_TAR_FILE
 _REMOTE_BASE_DIR = '/app/srv/awesome'
 def deploy():
-    newdir = 'www-%s' % datetime.now().strftime("%y-%m-%d_%H.%M.%s")
+    newdir = 'www-%s' % datetime.now().strftime("%y-%m-%d_%H.%M.%S")
     # 删除已有的tar
     run('rm -f %s' % _REMOTE_TMP_TAR)
     put('dist/%s'%_TAR_FILE, _REMOTE_TMP_TAR)
