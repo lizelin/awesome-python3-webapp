@@ -54,4 +54,4 @@ def deploy():
 
 # https://www.cnblogs.com/toutou/p/supervisor.html
 
-
+# 注意：在window下，要使用gitbash 终端。
